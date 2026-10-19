@@ -77,8 +77,8 @@ In VS Code, run **Chat: Install Plugin From Source** and enter `https://github.c
 <summary><strong>Gemini CLI</strong> (manual updates)</summary>
 
 ```bash
-gemini skills install https://github.com/mattpocock/skills.git --path skills/engineering
-gemini skills install https://github.com/mattpocock/skills.git --path skills/productivity
+npx skills add mattpocock/skills -a antigravity --skill engineering
+npx skills add mattpocock/skills -a antigravity --skill productivity
 ```
 
 Re-run both commands to update.
