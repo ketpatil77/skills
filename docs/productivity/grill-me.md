@@ -45,6 +45,9 @@ Sessions grow too long when you try to talk through an ungrillable question. The
 
 ## Common questions
 
+**Do I also need to install `grilling`?**
+No. `grill-me` includes the interview instructions, so installing it on its own is enough. The separate [grilling](https://aihero.dev/skills-grilling) skill remains available to other workflows that invoke the primitive directly.
+
 **How many questions should I expect, and how do I know when it ends?**
 Count rounds, not questions. Forty-six questions across four rounds is an ordinary session. It ends when the frontier is empty: it has visited every branch, and nothing is left as an unstated assumption.
 
@@ -71,6 +74,6 @@ More than for most skills. Grilling depends on the [model](https://www.aihero.de
 
 `grill-me` is a **standalone you can run anywhere, on anything**. Because it is stateless, it is portable. It needs no repo, workspace, or setup, and does not assume the idea is about software. People use it for business decisions, for writing, and for what to do next: anything they cannot think through clearly on their own.
 
-Portability is the only difference from [grill-with-docs](https://aihero.dev/skills-grill-with-docs). That skill runs the same interview, but reads a codebase to align against and records what it learns as `GLOSSARY.md` and ADRs. Both use the [grilling](https://aihero.dev/skills-grilling) skill underneath. `grill-me` is the user-invoked entry point that keeps no state.
+Portability is the only difference from [grill-with-docs](https://aihero.dev/skills-grill-with-docs). That skill runs the same interview, but reads a codebase to align against and records what it learns as `GLOSSARY.md` and ADRs. `grill-me` includes the same interview instructions as [grilling](https://aihero.dev/skills-grilling), so it also works when installed alone. It is the user-invoked entry point that keeps no state.
 
 If what you grilled does turn out to be software, you can hand the same conversation to [to-spec](https://aihero.dev/skills-to-spec) and carry on into the build flow (an option, not the point of the skill). When you're unsure which flow fits, [ask-matt](https://aihero.dev/skills-ask-matt) routes you.
